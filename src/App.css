@@ -1,0 +1,114 @@
+/* App-specific styles */
+
+/* Ensure smooth transitions between sections */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section spacing */
+section {
+  position: relative;
+}
+
+/* Ensure WebGL canvas stays behind content */
+.canvas-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.canvas-container canvas {
+  display: block;
+}
+
+/* Loading screen transition */
+.loading-screen {
+  will-change: clip-path;
+}
+
+/* Project cards 3D effect */
+.project-card {
+  will-change: transform;
+}
+
+/* Skill orbs */
+.skill-orb {
+  will-change: transform;
+}
+
+/* Magnetic button */
+.magnetic-button {
+  will-change: transform;
+}
+
+/* Custom cursor */
+[data-cursor-hover] {
+  cursor: none;
+}
+
+/* Lenis drives scroll; native smooth here fights the scroller (see index.css html) */
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Glass morphism enhancements */
+.glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-strong {
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+/* Text selection */
+::selection {
+  background: rgba(0, 255, 157, 0.3);
+  color: white;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #00ff9d;
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .canvas-container {
+    display: none;
+  }
+}
+
+/* Mobile optimizations */
+@media (pointer: coarse) {
+  .canvas-container {
+    opacity: 0.5;
+  }
+  
+  .noise-overlay {
+    display: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .glass,
+  .glass-strong {
+    background: rgba(0, 0, 0, 0.9);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
