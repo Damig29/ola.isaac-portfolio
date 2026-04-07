@@ -286,8 +286,8 @@ export function Navigation() {
 
           <div className="mt-8 flex flex-col items-center gap-4 w-full max-w-xs">
             <a
-              href="/images/CV.docx"
-              download="Ola_Isaac_CV.docx"
+              href="/images/CV.pdf"
+              download="Ola_Isaac_CV.pdf"
               className="
                 w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full
                 border border-white/20 text-white/70 text-sm font-medium
