@@ -316,7 +316,7 @@ export function About() {
 
             <div className="flex gap-6">
               <MagneticButton
-                href="/images/cv.docx"
+                href="/images/CV.docx"
                 download="Ola_Isaac_CV.docx"
                 className="text-sm px-8 py-4"
                 cursorText="Download"

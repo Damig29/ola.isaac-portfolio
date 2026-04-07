@@ -219,7 +219,7 @@ export function Navigation() {
             {/* Desktop CTAs */}
             <div className="hidden md:flex items-center gap-3">
               <a
-                href="/images/cv.docx"
+                href="/images/CV.docx"
                 download="Ola_Isaac_CV.docx"
                 className="
                   flex items-center gap-2 px-4 py-2 rounded-full
@@ -286,7 +286,7 @@ export function Navigation() {
 
           <div className="mt-8 flex flex-col items-center gap-4 w-full max-w-xs">
             <a
-              href="/images/cv.docx"
+              href="/images/CV.docx"
               download="Ola_Isaac_CV.docx"
               className="
                 w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full
