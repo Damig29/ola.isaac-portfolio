@@ -264,7 +264,7 @@ export function About() {
                 </div>
                 <div>
                   <p className="text-white/40 text-xs uppercase font-bold tracking-tighter">Email</p>
-                  <p className="font-medium">wealthpupo29@gmail.com</p>
+                  <p className="font-medium">oladipupoajagbe888@outlook.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-white/80 group">
@@ -273,7 +273,7 @@ export function About() {
                 </div>
                 <div>
                   <p className="text-white/40 text-xs uppercase font-bold tracking-tighter">Experience</p>
-                  <p className="font-medium">Full Stack Teacher</p>
+                  <p className="font-medium">Full Stack Developer</p>
                 </div>
               </div>
             </div>
@@ -291,6 +291,9 @@ export function About() {
             </div>
 
             <div className="space-y-6 text-white/70 leading-relaxed text-lg">
+              <p>
+                My name is <span className="text-white font-bold px-1">Oladipupo Ajagbe</span>, and <span className="text-cyber font-semibold px-1">Ola.isaac</span> is my professional brand name. Just a quick note in case you see a different name on my CV!
+              </p>
               <p>
                 I work as a <span className="text-white font-bold px-1">full stack developer</span> across modern JavaScript stacks—frontends, backends, databases, and deployment—so features go from idea to live without gaps in ownership.
               </p>

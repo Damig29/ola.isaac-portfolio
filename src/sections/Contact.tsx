@@ -1,21 +1,32 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowUpRight, Mail, Github, Linkedin, Twitter, Send, MapPin, Phone, Clock } from 'lucide-react';
+import { ArrowUpRight, Mail, Github, Linkedin, Send, MapPin, Phone, Clock } from 'lucide-react';
 import { MagneticButton } from '../components/MagneticButton';
 import { useLenisInstance } from '../context/LenisContext';
 import { scrollToHashAnchor } from '../utils/scrollToHash';
 
 // GSAP registration moved to main.tsx
 
+const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    stroke="none"
+  >
+    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+  </svg>
+);
+
 const socialLinks = [
   { icon: Github, href: 'https://github.com/Damig29', label: 'GitHub', handle: '@Damig29' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/oladipupo-isaac-745368264', label: 'LinkedIn', handle: '/in/oladipupo-isaac' },
-  { icon: Twitter, href: 'https://twitter.com/Damilar29', label: 'Twitter', handle: '@Damilar29' },
+  { icon: XIcon, href: 'https://twitter.com/Damilar29', label: 'X', handle: '@Damilar29' },
 ];
 
 const contactInfo = [
-  { icon: Mail, label: 'Email', value: 'wealthpupo29@gmail.com', href: 'mailto:wealthpupo29@gmail.com' },
+  { icon: Mail, label: 'Email', value: 'oladipupoajagbe888@outlook.com', href: 'mailto:oladipupoajagbe888@outlook.com' },
   { icon: Phone, label: 'Phone', value: '+234 907 627 7555', href: 'tel:+2349076277555' },
   { icon: MapPin, label: 'Location', value: 'Lagos, Nigeria', href: '#' },
   { icon: Clock, label: 'Availability', value: 'Mon – Fri, 9AM – 6PM PST', href: '#' },
@@ -48,7 +59,7 @@ export function Contact() {
   const socialsRef = useRef<HTMLDivElement>(null);
   const footerRef = useRef<HTMLDivElement>(null);
 
-  const [emailScrambled, setEmailScrambled] = useState('WEALTHPUPO29@GMAIL.COM');
+  const [emailScrambled, setEmailScrambled] = useState('OLADIPUPOAJAGBE888@OUTLOOK.COM');
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -174,7 +185,7 @@ export function Contact() {
   }, []);
 
   const handleEmailHover = () => {
-    const original = 'WEALTHPUPO29@GMAIL.COM';
+    const original = 'OLADIPUPOAJAGBE888@OUTLOOK.COM';
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@.';
     let iterations = 0;
 
@@ -402,7 +413,7 @@ export function Contact() {
               <div className="mb-10">
                 <p className="text-white/60 mb-4">Prefer email? Reach out directly:</p>
                 <a
-                  href="mailto:wealthpupo29@gmail.com"
+                  href="mailto:oladipupoajagbe888@outlook.com"
                   className="
                     group inline-flex items-center gap-3
                     text-xl md:text-3xl font-bold text-white
@@ -460,7 +471,7 @@ export function Contact() {
                 I&apos;m always excited to work on new challenges. Let&apos;s discuss how we can bring your ideas to life.
               </p>
               <MagneticButton
-                href="mailto:wealthpupo29@gmail.com"
+                href="mailto:oladipupoajagbe888@outlook.com"
                 className="text-lg"
                 cursorText="Send"
                 cursorScale="3"
