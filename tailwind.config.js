@@ -58,8 +58,8 @@ export default {
       fontSize: {
         // Scaled down to accommodate Syne's wider proportions
         'hero': ['clamp(1.5rem, min(7vw, 15dvh), 6.5rem)', { lineHeight: '0.85', letterSpacing: '-0.02em' }],
-        'section': ['clamp(2.5rem, 6.5vw, 8rem)', { lineHeight: '0.9', letterSpacing: '-0.01em' }],
-        'project': ['clamp(1.75rem, 3.5vw, 4rem)', { lineHeight: '1', letterSpacing: 'normal' }],
+        'section': ['clamp(2rem, 6.5vw, 8rem)', { lineHeight: '0.9', letterSpacing: '-0.01em' }],
+        'project': ['clamp(1.5rem, 3.5vw, 4rem)', { lineHeight: '1', letterSpacing: 'normal' }],
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",

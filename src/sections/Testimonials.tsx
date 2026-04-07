@@ -140,7 +140,7 @@ export function Testimonials() {
                         </span>
                         <h2
                             ref={headingRef}
-                            className="brutalist-heading text-6xl md:text-8xl text-white"
+                            className="brutalist-heading text-4xl sm:text-6xl md:text-8xl text-white"
                         >
                             CLIENT
                             <br />
@@ -224,10 +224,10 @@ export function Testimonials() {
                                     <p className="text-xl font-black text-white group-hover:text-cyber transition-colors duration-500 tracking-tight">
                                         {t.author}
                                     </p>
-                                    <div className="flex items-center gap-2 mt-1">
-                                        <span className="text-white/40 text-xs font-bold uppercase tracking-widest">{t.title}</span>
-                                        <div className="w-1 h-1 rounded-full bg-cyber" />
-                                        <span className="text-cyber text-xs font-black uppercase tracking-widest">{t.company}</span>
+                                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-2 mt-1">
+                                        <span className="text-white/40 text-[10px] sm:text-xs font-bold uppercase tracking-widest">{t.title}</span>
+                                        <div className="hidden sm:block w-1 h-1 rounded-full bg-cyber" />
+                                        <span className="text-cyber text-[10px] sm:text-xs font-black uppercase tracking-widest leading-tight">{t.company}</span>
                                     </div>
                                 </div>
                             </div>

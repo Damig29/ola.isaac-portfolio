@@ -243,8 +243,8 @@ export function About() {
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute -top-6 -right-6 w-32 h-32 border-t-2 border-r-2 border-cyber/20 rounded-tr-3xl" />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 border-b-2 border-l-2 border-cyber/20 rounded-bl-3xl" />
+              <div className="absolute -top-3 -right-3 sm:-top-6 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 border-t-2 border-r-2 border-cyber/20 rounded-tr-3xl" />
+              <div className="absolute -bottom-3 -left-3 sm:-bottom-6 sm:-left-6 w-24 h-24 sm:w-32 sm:h-32 border-b-2 border-l-2 border-cyber/20 rounded-bl-3xl" />
             </div>
 
             {/* Quick info List */}
@@ -382,7 +382,7 @@ export function About() {
         {/* Services / What I Do */}
         <div className="pt-20 border-t border-white/5">
           <div className="text-center mb-16 space-y-4">
-            <h3 className="brutalist-heading text-4xl md:text-5xl text-white">
+            <h3 className="brutalist-heading text-3xl md:text-5xl text-white">
               MY DIGITAL <span className="text-gradient-accent">TOOLBOX</span>
             </h3>
             <p className="text-white/50 max-w-xl mx-auto">

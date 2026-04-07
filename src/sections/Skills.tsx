@@ -98,7 +98,7 @@ function SkillBar({ skill, index }: { skill: Skill; index: number }) {
       </div>
       <div className="h-2 bg-white/10 rounded-full overflow-hidden">
         <div
-          className="h-full rounded-full transition-all duration-[1200ms] ease-out"
+          className="h-full rounded-full transition-all [transition-duration:1200ms] ease-out"
           style={{
             width: isVisible ? `${skill.level}%` : '0%',
             backgroundColor: skill.color,

@@ -383,7 +383,7 @@ export function Work() {
             <span className="text-cyber text-sm font-black uppercase tracking-[0.4em] mb-6 block">
               Work / Portfolio
             </span>
-            <h2 className="brutalist-heading text-6xl md:text-8xl text-white">
+            <h2 className="brutalist-heading text-4xl sm:text-6xl md:text-8xl text-white">
               CRAFTING
               <br />
               <span className="text-gradient-accent">IMPACT</span>

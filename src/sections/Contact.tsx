@@ -405,7 +405,7 @@ export function Contact() {
                   href="mailto:wealthpupo29@gmail.com"
                   className="
                     group inline-flex items-center gap-3
-                    text-2xl md:text-3xl font-bold text-white
+                    text-xl md:text-3xl font-bold text-white
                     hover:text-cyber transition-colors duration-300
                   "
                   onMouseEnter={handleEmailHover}
@@ -422,7 +422,7 @@ export function Contact() {
               {/* Social Links */}
               <div>
                 <p className="text-white/60 mb-4">Follow me on social media:</p>
-                <div ref={socialsRef} className="flex items-center gap-4">
+                <div ref={socialsRef} className="flex flex-wrap items-center gap-4">
                   {socialLinks.map(({ icon: Icon, href, label, handle }) => (
                     <a
                       key={label}
