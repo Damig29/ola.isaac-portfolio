@@ -216,7 +216,7 @@ export function Contact() {
     try {
       // Create payload for Web3Forms
       const payload = {
-        access_key: "8158f306-2ccb-4af2-8a30-a12ccdd5c04d", // <-- USER WILL REPLACE THIS!
+        access_key: "25d2478e-431c-4716-9be4-048ca741134a", // <-- USER WILL REPLACE THIS!
         name: formData.name,
         email: formData.email,
         subject: formData.subject,
