@@ -401,7 +401,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-white/50 text-sm">{item.label}</p>
-                      <p className="text-white font-medium group-hover:text-cyber transition-colors duration-300">
+                      <p className="text-white font-medium group-hover:text-cyber transition-colors duration-300 break-all">
                         {item.value}
                       </p>
                     </div>
@@ -415,8 +415,8 @@ export function Contact() {
                 <a
                   href="mailto:oladipupoajagbe888@outlook.com"
                   className="
-                    group inline-flex items-center gap-3
-                    text-xl md:text-3xl font-bold text-white
+                    group inline-flex items-center gap-2 sm:gap-3
+                    text-sm xs:text-base sm:text-xl md:text-2xl font-bold text-white
                     hover:text-cyber transition-colors duration-300
                   "
                   onMouseEnter={handleEmailHover}
@@ -424,9 +424,9 @@ export function Contact() {
                   data-cursor-text="Email"
                   data-cursor-scale="2.5"
                 >
-                  <Mail className="w-8 h-8" />
-                  <span className="font-mono tracking-wider">{emailScrambled}</span>
-                  <ArrowUpRight className="w-6 h-6 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                  <Mail className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
+                  <span className="font-mono tracking-wider break-all">{emailScrambled}</span>
+                  <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </a>
               </div>
 
